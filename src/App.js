@@ -6,7 +6,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import EmptyPage from "./component/EmptyPage";
 import CreateWord from "./component/CreateWord";
 import CreateDay from "./component/CreateDay";
-// import Hello from "./component/Hello";
+import Hello from "./component/Hello";
+import Count from "./component/Count";
+
 
 function App() {
   return (
@@ -17,6 +19,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <DayList />
+          </Route>
+          <Route path="/hello">
+            <Hello />
+          </Route>
+          <Route path="/count">
+            <Count />
           </Route>
           <Route path="/day/:day">
             <Day />
