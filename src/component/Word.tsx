@@ -23,7 +23,7 @@ export default function Word({ word: w }: IProps) {
   }
 
   function toggleDone() {
-    fetch(`http://localhost:3001/words/${word.id}`, {
+    fetch(`http://localhost:3000/words/${word.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export default function Word({ word: w }: IProps) {
 
   function del() {
     if (window.confirm("삭제 하시겠습니까?")) {
-      fetch(`http://localhost:3001/words/${word.id}`, {
+      fetch(`http://localhost:3000/words/${word.id}`, {
         method: "DELETE",
       }).then(res => {
         if (res.ok) {

@@ -21,7 +21,7 @@ function App() {
             <DayList />
           </Route>
           <Route path="/hello">
-            <Hello />
+            <Hello age={10}/>
           </Route>
           <Route path="/count">
             <Count />
