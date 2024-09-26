@@ -1,3 +1,4 @@
+import React from 'react';
 import Day from "./component/Day";
 import DayList from "./component/DayList";
 import Header from "./component/Header";
