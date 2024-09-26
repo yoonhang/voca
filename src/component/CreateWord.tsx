@@ -1,10 +1,11 @@
+// import React from 'react';
 import React, { useRef, useState } from "react";
 import { useHistory } from "react-router";
 import useFetch from "../hooks/useFetch";
 import { IDay } from "./DayList";
 
 export default function CreateWord() {
-  const days: IDay[] = useFetch("http://localhost:3001/days");
+  const days: IDay[] = useFetch("http://localhost:4000/days");
   const history = useHistory();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -18,7 +19,7 @@ export default function CreateWord() {
       const eng = engRef.current.value;
       const kor = korRef.current.value;
 
-      fetch(`http://localhost:3001/words/`, {
+      fetch(`http://localhost:3000/words/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

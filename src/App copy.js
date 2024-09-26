@@ -20,10 +20,10 @@ function App() {
           <Route exact path="/">
             <DayList />
           </Route>
-          <Route path="/hello">
-            <Hello age={10}/>
+          <Route path="/Hello">
+            <Hello />
           </Route>
-          <Route path="/count">
+          <Route path="/Count">
             <Count />
           </Route>
           <Route path="/day/:day">
