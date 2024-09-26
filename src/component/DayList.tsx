@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-// import dummy from "../db/data.json";
+//import dummy from "../db/data.json";
 
 
 export interface IDay {
